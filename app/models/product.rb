@@ -7,5 +7,10 @@ class Product < ApplicationRecord
   validates :name, presence: true
   validates :price, presence: true
   validates :quantity, presence: true
-  validates :category, presence: true
+  validates :category, presence: true 
+
+  # Check if the product is in stock
+  def in_stock?
+    quantity > 0
+  end
 end
