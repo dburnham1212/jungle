@@ -7,10 +7,12 @@ describe('example to-do app', () => {
     cy.visit('/')
   })
 
-  it("Visit product details page", () => {
-    // Click on scented blade image
-    cy.get('[alt="Scented Blade"]').click();
-    // Check if we have an h1 that contains the text 'Scented Blade'
-    cy.get('.product-detail h1').should('have.text', 'Scented Blade');
+  it("Add a product to the cart and make sure it exists", () => {
+    // Check if mycart does not have anything in it
+    cy.get('.navbar').find(".end-0").contains('0');
+    // Click on add button for first item
+    cy.get('.products article').first().find("button").click();
+    // Check if mycart has 1 item in it
+    cy.get('.navbar').find(".end-0").contains('1');
   });
 })

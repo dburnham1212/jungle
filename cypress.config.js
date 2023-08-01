@@ -10,6 +10,10 @@ module.exports = defineConfig({
       })
     },
   },
+
+  viewportWidth: 1280,
+  viewportHeight: 720,
+
   screenshotsFolder: "tmp/cypress_screenshots",
   videosFolder: "tmp/cypress_videos",
   trashAssetsBeforeRuns: false

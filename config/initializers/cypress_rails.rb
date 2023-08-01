@@ -2,6 +2,7 @@ require 'database_cleaner/active_record'
 DatabaseCleaner.strategy = :truncation
 
 return unless Rails.env.test?
+DatabaseCleaner.strategy = :truncation
 
 CypressRails.hooks.before_server_start do
   # Called once, before either the transaction or the server is started
