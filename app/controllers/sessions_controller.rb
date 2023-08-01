@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       # failure, render login form
       redirect_to '/login'
     end
-    user = User.find_by_email(params[:email])
+    #user = User.find_by_email(params[:email])
     
     # # If the user exists AND the password entered is correct.
     # if user && user.authenticate(params[:password])
