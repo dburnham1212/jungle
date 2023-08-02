@@ -9,10 +9,10 @@ describe('example to-do app', () => {
 
   it("Add a product to the cart and make sure it exists", () => {
     // Check if mycart does not have anything in it
-    cy.get('.navbar').find(".end-0").contains('0');
+    cy.get('.navbar').contains('My Cart').contains('0');
     // Click on add button for first item
     cy.get('.products article').first().find("button").click();
     // Check if mycart has 1 item in it
-    cy.get('.navbar').find(".end-0").contains('1');
+    cy.get('.navbar').contains('My Cart').contains('1');
   });
 })
