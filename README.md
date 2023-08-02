@@ -10,27 +10,27 @@ Displays all of the plants currently in the collection and allows you to add pla
 
 !["Screenshot of home page (To browse all plants in the collection)!"](https://github.com/dburnham1212/jungle/blob/master/public/screenshots/Jungle_homepage.png)
 
-### TinyApp - URL Display Page (To update a new URL)
+### Jungle - Evergreens Category Page (To view products in the Evergreens category)
 
 Evergreens category page, like the home page allows you to add plants to your cart for purchase!
 
 !["Screenshot of evergreens page (display evergreens category)!"](https://github.com/dburnham1212/jungle/blob/master/public/screenshots/Evergreens_page.png)
 
-### TinyApp - URL Display Page (To update a new URL)
+### Jungle - My Cart Page
 
 My Cart page allows you to check out your purchase and confirm your order
 
 !["My cart page!"](https://github.com/dburnham1212/jungle/blob/master/public/screenshots/My_Cart_Page.png)
 
-### TinyApp - Login Page
+### Jungle - Login Page
 
 Simple login page to allow users to use their credentials and login to the app to interact with the site.
 
 !["Screenshot of login page!"](https://github.com/dburnham1212/jungle/blob/master/public/screenshots/Login_Page.png)
 
-### TinyApp - Registration Page
+### Jungle - Registration Page
 
-Users can create new credentials which will be saved on the server. They can then login and create new URLs!
+Users can create new credentials which will be saved on the server. They can then login and browse plants on the site!
 
 !["Screenshot of registration page!"](https://github.com/dburnham1212/jungle/blob/master/public/screenshots/Signup_page.png)
 
