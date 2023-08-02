@@ -2,33 +2,53 @@
 
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
 
+# Screenshots
 
+### Jungle - Home Page (To browse all plants in the collection)
 
-## Setup
+Displays all of the plants currently in the collection and allows you to add plants to your cart for purchase!
 
-1.
-2. Create `config/database.yml` by copying `config/database.example.yml`
-3. Create `config/secrets.yml` by copying `config/secrets.example.yml`
+!["Screenshot of home page (To browse all plants in the collection)!"](https://github.com/dburnham1212/jungle/blob/master/public/screenshots/Jungle_homepage.png)
+
+### TinyApp - URL Display Page (To update a new URL)
+
+Evergreens category page, like the home page allows you to add plants to your cart for purchase!
+
+!["Screenshot of evergreens page (display evergreens category)!"](https://github.com/dburnham1212/jungle/blob/master/public/screenshots/Evergreens_page.png)
+
+### TinyApp - URL Display Page (To update a new URL)
+
+My Cart page allows you to check out your purchase and confirm your order
+
+!["My cart page!"](https://github.com/dburnham1212/jungle/blob/master/public/screenshots/My_Cart_Page.png)
+
+### TinyApp - Login Page
+
+Simple login page to allow users to use their credentials and login to the app to interact with the site.
+
+!["Screenshot of login page!"](https://github.com/dburnham1212/jungle/blob/master/public/screenshots/Login_Page.png)
+
+### TinyApp - Registration Page
+
+Users can create new credentials which will be saved on the server. They can then login and create new URLs!
+
+!["Screenshot of registration page!"](https://github.com/dburnham1212/jungle/blob/master/public/screenshots/Signup_page.png)
+
+# Dependencies
+
+- Rails 6.1 [Rails Guide](http://guides.rubyonrails.org/v6.1/)
+- Bootstrap 5
+- PostgreSQL 9.x
+- Stripe
+
+# Getting Started
+
+1. Run `bundle install` to install dependencies
 4. Run `bin/rails db:reset` to create, load and seed db
-5. Create .env file based on .env.example
-6. Sign up for a Stripe account
-7. Put Stripe (test) keys into appropriate .env vars
 8. Run `bin/rails s -b 0.0.0.0` to start the server
-
-## Database
-
-If Rails is complaining about authentication to the database, uncomment the user and password fields from `config/database.yml` in the development and test sections, and replace if necessary the user and password `development` to an existing database user.
 
 ## Stripe Testing
 
 Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
 
 More information in their docs: <https://stripe.com/docs/testing#cards>
-
-## Dependencies
-Run `bundle install` to install dependencies
-
-- Rails 6.1 [Rails Guide](http://guides.rubyonrails.org/v6.1/)
-- Bootstrap 5
-- PostgreSQL 9.x
-- Stripe
