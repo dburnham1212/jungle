@@ -11,6 +11,7 @@ class OrdersController < ApplicationController
     if order.valid?
       empty_cart!
       redirect_to order, notice: 'Your Order has been placed.'
+      # if the current user exists send a confirmation email 
       if current_user
         OrderMailer.with(user: current_user, order: order).order_confirmation_email.deliver_now
       end

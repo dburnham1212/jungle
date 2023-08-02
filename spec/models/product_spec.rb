@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Product, type: :model do
   before :each do
+    # Create a category and save it
     @category = Category.new(name: "Green")
     @category.save
     # Create a product

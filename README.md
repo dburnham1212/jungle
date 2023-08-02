@@ -2,9 +2,11 @@
 
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
 
+
+
 ## Setup
 
-1. Run `bundle install` to install dependencies
+1.
 2. Create `config/database.yml` by copying `config/database.example.yml`
 3. Create `config/secrets.yml` by copying `config/secrets.example.yml`
 4. Run `bin/rails db:reset` to create, load and seed db
@@ -24,6 +26,7 @@ Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
 More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Dependencies
+Run `bundle install` to install dependencies
 
 - Rails 6.1 [Rails Guide](http://guides.rubyonrails.org/v6.1/)
 - Bootstrap 5
