@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <p>
+      You have successfully placed your order! Order ID #<%= @order.id %>
+    </p>
+    <% @order.line_items.each do |line_item| %>
+      <p>
+        <span>Product: <%= line_item.product.name %>, 
+              Price: <%= humanized_money_with_symbol line_item.item_price %>, 
+              Quantity: <%= line_item.quantity %>, 
+              Total Price: <%= humanized_money_with_symbol line_item.total_price %>
+        </span>
+      </p>
+    <% end %>
+    <p>
+      Total price of order: <%= humanized_money_with_symbol @order.total_cents / 100 %>
+    <p>
+      Thank you for shopping!
+    </p>
+  </body>
+</html>
